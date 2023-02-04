@@ -1,0 +1,36 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: purple;
+  transition: all 0.5s;
+  overflow: hidden;
+  border-radius: 9px;
+  padding: 8px;
+
+  &:hover {
+    filter: hue-rotate(-30deg);
+  }
+
+  @include media(">=tablet") {
+    padding: 15px;
+  }
+
+  @include media(">=desktop") {
+    min-height: 54px;
+    min-width: 194px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 28px;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(115.11deg, #9021ac 16.38%, #c8459f 84.56%);
+}
