@@ -85,8 +85,13 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 800;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1024px) {
   h3 {
@@ -156,8 +161,9 @@ img {
     max-width: 250px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #header .box-img {
+    display: block;
     max-width: 100%;
   }
 }
@@ -165,10 +171,14 @@ img {
   min-width: 140px;
   margin-right: 50px;
 }
+@media (min-width: 768px) {
+  #header .btn-primary {
+    margin: 0;
+  }
+}
 @media (min-width: 1024px) {
   #header .btn-primary {
     min-width: 205px;
-    margin: 0;
   }
 }
 
@@ -266,8 +276,13 @@ img {
     height: auto;
     visibility: visible;
     overflow: visible;
-    min-width: 465px;
+    min-width: 400px;
     padding: 0 15px 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .main-nav {
+    min-width: 465px;
   }
 }
 .main-nav .navbar-nav {
@@ -298,6 +313,11 @@ img {
   font-size: 18px;
 }
 @media (min-width: 768px) {
+  .main-nav .navbar-nav a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
   .main-nav .navbar-nav a {
     font-size: 16px;
   }
@@ -378,7 +398,7 @@ img {
   display: flex;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .intro {
     padding: 81px 0 35px;
   }
@@ -458,7 +478,7 @@ img {
   padding-bottom: 15px;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .info {
     padding-bottom: 37px;
     text-align: left;
@@ -483,10 +503,17 @@ img {
 }
 .info .info-content {
   margin: 0 -20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .info .info-content {
-    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1024px) {
+  .info .info-content {
     justify-content: space-between;
   }
 }
@@ -581,8 +608,13 @@ img {
   background-color: #77B2D3;
   color: #fff;
   text-align: center;
-  min-height: 74px;
+  min-height: 45px;
   padding: 10px;
+}
+@media (min-width: 1024px) {
+  .services .content-wrapper > li .card .card-header {
+    min-height: 74px;
+  }
 }
 .services .content-wrapper > li .card .card-header h3,
 .services .content-wrapper > li .card .card-header h4 {
@@ -625,11 +657,16 @@ img {
   height: 1px;
 }
 .services .content-wrapper > li .card .card-price .price {
-  font-size: 30px;
+  font-size: 20px;
   background: linear-gradient(115.11deg, #9021ac 16.38%, #c8459f 84.56%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+@media (min-width: 768px) {
+  .services .content-wrapper > li .card .card-price .price {
+    font-size: 30px;
+  }
 }
 .services .content-wrapper > li .btn {
   min-width: 160px;
