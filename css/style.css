@@ -728,7 +728,7 @@ img {
 }
 @media (min-width: 768px) {
   .consultation {
-    padding-top: 43px;
+    padding: 43px 0 22px;
   }
 }
 .consultation .row {
@@ -737,7 +737,7 @@ img {
   margin: 0 -15px;
 }
 .consultation h2 {
-  margin: 0 0 20px;
+  margin: 0 0 24px;
 }
 .consultation .descr {
   margin: 0 0 23px;
@@ -752,6 +752,9 @@ img {
 .consultation .box-img {
     width: 50%;
   }
+}
+.consultation .box-img {
+  padding: 0;
 }
 .consultation .content-block {
   margin-bottom: 20px;
@@ -791,49 +794,44 @@ img {
 }
 .consultation textarea,
 .consultation input {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
   background: #ffffff;
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
   border-radius: 7px;
   outline: none;
   border: none;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
   padding: 10px 17px;
+}
+@media (min-width: 768px) {
+  .consultation textarea,
+.consultation input {
+    font-size: 16px;
+  }
 }
 .consultation textarea::-moz-placeholder, .consultation input::-moz-placeholder {
   font-weight: 300;
-  font-size: 13px;
   color: #333333;
 }
 .consultation textarea:-ms-input-placeholder, .consultation input:-ms-input-placeholder {
   font-weight: 300;
-  font-size: 13px;
   color: #333333;
 }
 .consultation textarea::placeholder,
 .consultation input::placeholder {
   font-weight: 300;
-  font-size: 13px;
   color: #333333;
-}
-@media (min-width: 768px) {
-  .consultation textarea::-moz-placeholder, .consultation input::-moz-placeholder {
-    font-size: 16px;
-  }
-  .consultation textarea:-ms-input-placeholder, .consultation input:-ms-input-placeholder {
-    font-size: 16px;
-  }
-  .consultation textarea::placeholder,
-.consultation input::placeholder {
-    font-size: 16px;
-  }
 }
 .consultation textarea {
   width: 100%;
   height: 141px;
+  padding: 20px;
+  resize: none;
 }
 .consultation .checkbox-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
 }
 .consultation .checkbox {
   width: 20px;
@@ -863,7 +861,7 @@ img {
 }
 @media (min-width: 1024px) {
   .works {
-    padding: 53px 0 81px;
+    padding: 53px 0 90px;
   }
 }
 .works h2 {
@@ -910,6 +908,9 @@ img {
     padding: 22px 30px 7px;
   }
 }
+.works .cases-box .case-header {
+  padding: 22px 30px 7px;
+}
 .works .cases-box .case-header .box-img {
   max-width: 125px;
 }
@@ -919,10 +920,11 @@ img {
   }
 }
 .works .cases-box .case-body {
+  padding: 24px 30px 25px;
   background-color: #f3f1fe;
 }
 .works .cases-box .case-body h3 {
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 .works .cases-box .case-body .title {
   font-size: 18px;
@@ -932,7 +934,7 @@ img {
 }
 @media (min-width: 768px) {
   .works .cases-box .case-footer {
-    padding: 42px 30px 0;
+    padding: 25px 30px 0;
   }
 }
 .works .cases-box .case-footer h3 {
@@ -947,6 +949,9 @@ img {
 }
 .works .info-list > li h4 {
   margin: 0;
+}
+.works .info-list > li .descr {
+  display: block;
 }
 .works .img-block {
   display: flex;
@@ -974,7 +979,7 @@ img {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    margin: 0 -15px 58px;
+    margin: 0 -15px 65px;
   }
 }
 #footer .col {
@@ -1011,7 +1016,7 @@ img {
   text-decoration: none;
 }
 #footer .holder-nav {
-  padding: 17px 0 0;
+  padding: 25px 0 0;
 }
 #footer .logo-footer {
   margin: 0 -11px;
