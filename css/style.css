@@ -544,13 +544,23 @@ img {
 
 .gradient-text {
   display: block;
-  font-size: 50px;
+  font-size: 35px;
   line-height: 1.12;
   font-weight: 800;
   background: linear-gradient(115.11deg, #9021ac 16.38%, #c8459f 84.56%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+@media (min-width: 768px) {
+  .gradient-text {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .gradient-text {
+    font-size: 50px;
+  }
 }
 
 .services {
@@ -562,7 +572,17 @@ img {
   }
 }
 .services h2 {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .services h2 {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .services h2 {
+    margin-bottom: 40px;
+  }
 }
 .services .content-wrapper {
   flex-wrap: wrap;
@@ -794,9 +814,14 @@ img {
 }
 
 .works {
-  padding: 30px 0 40px;
+  padding: 30px 0 25px;
 }
 @media (min-width: 768px) {
+  .works {
+    padding: 40px 0 45px;
+  }
+}
+@media (min-width: 1024px) {
   .works {
     padding: 53px 0 81px;
   }
@@ -950,6 +975,19 @@ img {
 }
 #footer .logo-footer {
   margin: 0 -11px;
+}
+#footer .logo-footer img {
+  max-width: 230px;
+}
+@media (min-width: 768px) {
+  #footer .logo-footer img {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  #footer .logo-footer img {
+    max-width: 100%;
+  }
 }
 #footer .link-text {
   display: block;
