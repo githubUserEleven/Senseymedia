@@ -66,7 +66,7 @@ h3 {
   font-size: 13px;
   font-weight: 800;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     font-size: 16px;
   }
 
@@ -115,7 +115,11 @@ img {
 #header {
   background-color: $white;
   font-size: 14px;
-  padding: 5px 0;
+  padding: 10px 0;
+
+  @include media(">=desktop") {
+    padding: 5px 0;
+  }
 
   .container {
     display: flex;
@@ -323,7 +327,7 @@ img {
   width: 28px;
   height: 22px;
   position: absolute;
-  top: 12px;
+  top: 15px;
   right: 15px;
   text-indent: -9999px;
   z-index: 5;
@@ -507,6 +511,11 @@ img {
     > li {
       position: relative;
       padding: 0 20px;
+      margin-bottom: 8px;
+
+      @include media('>=desktop') {
+        margin-bottom: 0;
+      }
 
       &:last-child {
         &:after {
@@ -546,11 +555,11 @@ img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     font-size: 40px;
   }
 
-  @include media('>=desktop') {
+  @include media(">=desktop") {
     font-size: 50px;
   }
 }
@@ -565,11 +574,11 @@ img {
   h2 {
     margin-bottom: 15px;
 
-    @include media('>=tablet') {
-margin-bottom: 30px;
+    @include media(">=tablet") {
+      margin-bottom: 30px;
     }
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       margin-bottom: 40px;
     }
   }
@@ -618,7 +627,7 @@ margin-bottom: 30px;
           min-height: 45px;
           padding: 10px;
 
-          @include media('>=desktop') {
+          @include media(">=desktop") {
             min-height: 74px;
           }
 
@@ -684,8 +693,19 @@ margin-bottom: 30px;
             -webkit-text-fill-color: transparent;
             background-clip: text;
 
-            @include media('>=tablet') {
+            @include media(">=tablet") {
               font-size: 30px;
+            }
+          }
+          .text {
+            margin-left: 7px;
+
+            @include media(">=tablet") {
+              margin-left: 5px;
+            }
+
+            @include media(">=desktop") {
+              margin-left: 3px;
             }
           }
         }
@@ -704,7 +724,7 @@ margin-bottom: 30px;
 }
 
 .consultation {
-  padding-top: 15px;
+  padding: 15px 0 20px;
 
   @include media(">=tablet") {
     padding-top: 43px;
@@ -734,11 +754,19 @@ margin-bottom: 30px;
     }
   }
 
+  .content-block {
+    margin-bottom: 20px;
+
+    @include media('>=tablet') {
+      margin-bottom: 0;
+    }
+  }
+
   .consultation-form {
     .form-row {
       display: flex;
       flex-wrap: wrap;
-      margin: 0 -14px 10px;
+      margin: 0 -5px 10px;
 
       @include media(">=tablet") {
         margin: 0 -14px 20px;
@@ -746,7 +774,11 @@ margin-bottom: 30px;
 
       .col {
         width: 50%;
-        padding: 0 14px;
+        padding: 0 5px;
+
+        @include media('>=tablet') {
+          padding: 0 14px;
+        }
       }
     }
   }
@@ -803,12 +835,16 @@ margin-bottom: 30px;
       height: 32px;
     }
   }
+
+  .btn {
+    padding: 10px 20px;
+  }
 }
 
 .works {
   padding: 30px 0 25px;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     padding: 40px 0 45px;
   }
 
@@ -988,11 +1024,11 @@ margin-bottom: 30px;
     img {
       max-width: 230px;
 
-      @include media('>=tablet') {
+      @include media(">=tablet") {
         max-width: 300px;
       }
 
-      @include media('>=desktop') {
+      @include media(">=desktop") {
         max-width: 100%;
       }
     }
